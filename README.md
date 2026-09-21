@@ -16,7 +16,7 @@ The objective of the project is to transform raw sales data into meaningful busi
 
 ## Dataset
 
-- The main file used for this project is "PowerBI_Sales_Dataset_10000.csv".
+- The main file used for this project is [PowerBI_Sales_Dataset_10000.csv](PowerBI_Sales_Dataset_10000.csv).
 - This contains detailed transactions records from 2024 to 2025.
 - There are 10000 rows of data
 - There are 20 columns in total
