@@ -71,8 +71,7 @@ The following steps were performed:
 - Prepared the cleaned data for analysis.
 
 The SQL queries used for the cleaning process are available in:
-
-`sql/ecommerce_analysis.sql`
+[View SQL Queries Here](data_cleaning_and_exploratory_sql.sql)
 
 ## Exploratory Data Analysis
 
@@ -128,7 +127,7 @@ The analysis was designed around the following questions:
 
 
 The SQL queries used for the cleaning and exploratory process are available in:
-`sql/ecommerce_analysis.sql`
+[View SQL Queries Here](data_cleaning_and_exploratory_sql.sql)
 
 ## Data Modeling
 
@@ -139,6 +138,8 @@ I imported the cleaned tables into Power BI and built a **Star Schema** data mod
 	* `Dim_Customer` connects to `Fact_Sales`
 	* `Dim_Product` connects to `Fact_Sales`
 * **Calender Table:** I created a new calender table to handle dates and linked it to the main sales data.
+
+![Data Model Schema](data_model_relationship.png)
 
 ## DAX Measures & Table Formulas
 I used DAX to calculate business metrics and build a custom calendar table. 
@@ -194,17 +195,23 @@ The final report is an interactive, **three-page dashboard** divided into specif
 *   **Regional Performance:** Uses a clustered column chart to view sales and profit by Region.
 *   **Payment & Feedback:** Tracks transaction volumes by Payment Type, and uses a Gauge visual to show our customer service rating out of 5 stars.
 
+![Sales Overview](sales_screenshot.png)
+
 ### Page 2: Product Analysis
 *   **Product Performance Matrix:** A detailed matrix table showing Total Sales, Total Profit, and Profit Margin for all products. *This revealed that some low-sales items actually produce high profit margins.*
 *   **What Sells vs. What Makes Money:** A scatter chart tracking Quantity (X-axis) and Profit (Y-axis), with bubble size showing the Total Sales volume.
 *   **Category Splits:** A Pie chart displaying Sales and Profit share by Product Category.
 *   **Top Items:** A clustered bar chart breaking down specific items and their categories sold.
 *   **Filters:** Includes slicers for Year, Category, and Product to filter the page.
+![Product Overview](product_screenshot.png)
 
 ### Page 3: Customer Page
 *   **KPI Cards:** Displays Total Unique Customers and Average Profit per Customer.
 *   **Top & Bottom Tiers:** Table visuals isolating our Top 10 Best Customers and Bottom 10 Worst Customers based on sales, profit, and margin.
 *   **Demographics:** A stacked bar chart showing customer counts by Age Group, and a Pie chart breaking down the count of Male vs. Female buyers.
+![Customer Overview](customer_screenshot.png)
+
+**Full Power BI Report (PDF):** [Download PDF Report](dashboard.pdf)
 
 
 ## 8. Key Findings & Core Insights
